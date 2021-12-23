@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Découvrir Html</title>
+    <meta charset="utf-8" />
+
+    <style>
+        p::first-letter {
+            text-transform: uppercase;
+            color: red;
+            font: italic;
+            font-size: 30px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color:green;
+            font-size:20 px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!--
+        Mon commentaire
+    -->
+    <h1>Les Balises élémentaires</h1>
+    <h2>Le paragraphe</h2>
+    <p>
+        Contenu de mon paragraphe
+        Nous sommes <strong>Vendredi ...</strong>
+    </p>
+
+    <p>
+    <pre>
+        Contenu de mon paragraphe
+        Nous sommes <strong>Vendredi ...</strong>
+      </pre>
+      </p>
+
+    <br>
+
+    <h1>Les balises plus complexes</h1>
+    <h2>Les listes simples</h2>
+    <ul>
+        <li>Acheter de la farine</li>
+        <li>Acheter des Oeufs</li>
+        <li>Fabriquer un gateeau</li>
+    </ul>
+    <h2>Les listes Ordonnées</h2>
+    <ol>
+        <li>Acheter de la farine</li>
+        <li>Acheter des Oeufs</li>
+        <li>Fabriquer un gateeau</li>
+    </ol>
+
+    <h2>Les listes de définition</h2>
+    <dl>
+        <dt>Clé</dt>
+        <dd>Objet pour ouvrir une serrure</dd>
+        <dd>Solution à un problème</dd>
+        <dd>En musique, elle représente la hauteur des notes (sol, fa ..)</dd>
+        <dt>Clavier</dt>
+        <dd>Outil de rédaction</dd>
+        <dd>instrument de musique</dd>
+
+    </dl>
+
+    <h2>Les tableaux</h2>
+    <table>
+        <!-- Les Titres de colonnes du Tableau-->
+        <tr>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Ville</th>
+        </tr>
+        <!-- Les Lignes du Tableau-->
+        <tr>
+            <td>Jean</td>
+            <td>Valjean</td>
+            <td>Paris</td>
+        </tr>
+
+        <tr>
+            <td>Robert</td>
+            <td>Dupond</td>
+            <td>Nantes</td>
+        </tr>
+
+    </table>
+
+    <h2>Le lien absolu vers Google</h2>
+    <a href="https://google.com">Cliquer sur ce lien absolu</a>
+ 
+    <h2>Le lien relatif</h2>
+    <a href="hello-0.html">Le lien relatif vers hello-0</a>
+
+    <h2>Le lien relatif 2</h2>
+    <a href="lr/hello-0.html" target="_blank">Le lien relatif (vers lr) vers hello-0</a>
+
+<h2>Les images</h2>
+<p>Une image avec son titre</p>
+<img src="images/beach.jpg" title="La plage" alt="Pas de Plage" width="50%" />
+
+<p>Une image avec son texte alternatif - l'image n'existe pas</p>
+<img src="images/beach1.jpg" title="La plage" alt="Pas de Plage"/>
+
+<h2>Audio</h2>
+<p>Du son ...</p>
+<audio controls>
+    <source src="audio/audio.mp3" type="audio/mpeg"/>
+    Your brower does not support audio.
+</audio>
+
+<h2>Video</h2>
+<video width="400" controls>
+  <source src="http://vjs.zencdn.net/v/oceans.mp4"
+  type="video/mp4" />
+  Your browser does not support html video.
+
+</video>
+
+</body>
+
+</html>

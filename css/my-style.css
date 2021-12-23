@@ -1,0 +1,111 @@
+/* Selecteur universel 
+* {
+    color: black;
+}
+*/
+
+/* Selecteur par type : h1 , h2, li , img .. */
+
+h1  {
+    color :royalblue;
+} 
+
+h2 {
+    text-transform: uppercase;
+    color : blueviolet ;
+    font-style:italic;
+    font-size: 20px;
+}
+
+li {
+    color:seagreen;
+}
+
+/* selecteur par attribut : []*/
+h1[myattribute] {
+color: chartreuse;
+font-style: oblique;
+font-size : 40px;
+border: 6px dotted seagreen ;
+}
+
+/* Selecteur par Id : #*/
+#myId {
+    background-color: orangered !important;
+    border: 6px dotted purple ;
+}
+
+/* Selecteur par classe : . */
+.myclass {
+    background-color: gold;
+    border: 6px solid orangered ;
+}
+
+/* Combinaison de selecteur*/
+p .special {
+    background-color: green;
+    color: hotpink;
+    font-family: Helvetica , sans-serif;
+}
+
+/* Selecteur par classe appliqué à un selectur type: . */
+p.myspecialclassforp {
+    background-color: lightblue;
+    border: 6px solid orangered ;
+}
+
+/* pseudo-classe sur les liens */
+
+a:link {
+    background-color: red;
+}
+
+a:visited {
+    background-color: lightblue;
+    
+}
+
+a:hover {
+    background-color:  lightgreen;
+}
+
+/* pseudo elements : exemple before sur li*/
+
+li::before {content: "Ingrédient - "}
+
+li::after {content: " - Miam"}
+
+/* formatter la table */
+
+table {
+    border: 1px solid black;
+    font-family : Arial, Helvetica, sans-serif ;
+    width: 100%;
+}
+
+th {
+    padding-top :12px;
+    padding-bottom :12px;
+    text-align : left;
+    background-color: #4caf50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #b3a8a8;
+    color: white;
+    
+}
+
+tr:nth-last-child(1) {
+    height: 36px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: darkorange;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+
+}

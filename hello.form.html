@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mon premier formulaire</title>
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+    <h1>Mon premier formulaire</h1>
+
+    <form method="post" action="">
+
+        <label for="fname">First Name:</label> <br />
+        <input type="text" id="fname" name="fname" /> <br />
+
+        <label for="lname">Last Name:</label> <br />
+        <input type="text" id="lname" name="lname" /> <br />
+
+        <!-- Avec Number-->
+        <fieldset>
+            <legend>My favorite Number between 0 and 10</legend>
+            <input type="number" id="favoriteNumber" name="favoriteNumber" value=0 min=0 max=10 />
+        </fieldset>
+
+        <!--Avec des Radio button-->
+        <fieldset>
+            <legend>My Gender</legend>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+        </fieldset>
+
+        <!--Avec des Checkboxes-->
+        <fieldset>
+            <legend>My favorite musics</legend>
+            <input type="checkbox" id="music1" name="music" value="Jazz" />
+            <label for="music1">I like Jazz</label> <br />
+            <input type="checkbox" id="music2" name="music" value="Classic" />
+            <label for="music2">I like Classic</label> <br />
+            <input type="checkbox" id="music3" name="music" value="Pop" />
+            <label for="music3">I like Pop</label> <br />
+        </fieldset>
+
+        <!-- Avec Select (Liste déroulante)-->
+        <fieldset>
+            <legend>My favorite continents</legend>
+            <label for="continents">my continents</label><br />
+
+            <select id="continents" name="continents" size="4" multiple>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </fieldset>
+
+          <!-- Avec des DataLists -->
+          <fieldset>
+            <legend>My favorite Beer</legend>
+            <label for="beers">I really enjoy :</label><br />
+
+            <input type="text" list="proposed_beers" id="beers" 
+            name=beers />
+
+            <datalist id="proposed_beers" >
+                <option value="Meteor Beer"></option>
+                <option value="Pils"></option>
+                <option value="Kronenbourg"></option>
+                <option value="Kriek"></option>
+            </datalist>
+          </fieldset>
+
+          <!-- Avec des DataLists - réutilisation-->
+          <fieldset>
+            <legend>My Second preferred Beer</legend>
+            <label for="beers2">I really enjoy :</label><br />
+
+            <input type="text" list="proposed_beers" id="beers2" 
+            name=beers2 />
+            </fieldset>
+
+
+        <input type="submit" value="Envoyer" />
+    </form>
+
+
+</body>
+
+</html>

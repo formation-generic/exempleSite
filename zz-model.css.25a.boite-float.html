@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Les boîtes flottantes</title>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+    }
+
+    .gauche {
+      float: left;
+      width: 25%;
+      background: #FF99FF;
+      height: 100px;
+    }
+
+    .milieu {
+      float: left;
+      width: 40%;
+      background: #66FFFF;
+      height: 300px;
+    }
+
+    .droite {
+      float: left;
+      width: 25%;
+      background: #9999FF;
+      height: 100px;
+    }
+
+    .ddroite {
+      float: left;
+      width: 10%;
+      background: #F99FFF;
+      height: 100px;
+    }
+
+    /* N 'accepte aucune boite flottante à sa droite*/
+    .haut {
+      clear: right;
+      width: 100%;
+      background: #FF3366;
+      height: 50px;
+    }
+
+    /* N 'accepte aucune boiteflottante à sa gauche*/
+
+    .bas {
+      clear: left;
+      width: 100%;
+      background: #FF3366;
+      height: 50px;
+     
+    }
+  </style>
+</head>
+
+<body>
+  <div class="haut">haut</div>
+  <div class="gauche">gauche</div>
+  <div class="milieu">milieu</div>
+  <div class="droite">droite</div>
+  <div class="ddroite">ddroite</div>
+  <div class="bas">bas</div>
+</body>
+
+</html>

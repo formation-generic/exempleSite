@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Découvrir Html</title>
+    <meta charset="utf-8" />
+    <style>
+        .monImageFloat {
+            float: left;
+            width: 170px;
+            height: 170px;
+            margin-right: 15px;
+            border: 6px solid rgb(43, 4, 133);
+            /*
+Clear permet d'indiquer aux autres éléments suivant de reprendre un comportement normal
+
+clear: both;
+*/
+        }
+
+        .monImageAbsolute {
+            position: absolute;
+            width: 170px;
+            height: 170px;
+            margin-right: 15px;
+            top: 30px;
+            right: 30px;
+            border: 6px solid #DF3F3F;
+        }
+
+        .monImageFixed {
+            position: fixed;
+            width: 170px;
+            height: 170px;
+            margin-right: 15px;
+            top: 30px;
+            left: 30px;
+            border: 6px solid green;
+        }
+
+        .mynewspapercss3 {
+            column-count: 3;
+            column-rule-color: #c52317;
+            column-rule-style: groove;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <h1>CSS</h1>
+    <h2>Positionnement flottant (float)</h2>
+    On peut le mettre à gauche ou à droite
+    <p>
+        <img src="images/beach.jpg" title="La plage" class="monImageFloat" /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non massa viverra, semper neque id, convallis neque.
+        Aliquam eu dictum eros, at auctor elit. Aenean lacinia et ante sed dapibus. Curabitur cursus magna sit amet luctus
+        faucibus. Nunc sed magna nec ipsum lobortis aliquam. Aenean id est dui. Nullam nec aliquet turpis. Vestibulum nec
+        lorem magna. Fusce eu fermentum dolor. Cras at lobortis mauris. Orci varius natoque penatibus et magnis dis parturient
+        montes, nascetur ridiculus mus. Cras quis cursus enim, nec tempor urna. Fusce semper dictum eros nec porta. Proin
+        eu mauris viverra, venenatis dolor eget, tincidunt ante. Donec aliquam nibh nec orci interdum pellentesque. Integer
+        nec laoreet lacus. Etiam a sagittis nibh. Morbi eu ligula ullamcorper sapien convallis auctor sagittis eget tellus.
+        Pellentesque nec aliquam orci, a mattis leo. Curabitur lobortis sapien sodales mauris scelerisque, a imperdiet orci
+        laoreet. Aliquam erat volutpat.
+        Aliquam eu dictum eros, at auctor elit. Aenean lacinia et ante sed dapibus. Curabitur cursus magna sit amet luctus
+        faucibus. Nunc sed magna nec ipsum lobortis aliquam. Aenean id est dui. Nullam nec aliquet turpis. Vestibulum nec
+        lorem magna. Fusce eu fermentum dolor. Cras at lobortis mauris. Orci varius natoque penatibus et magnis dis parturient
+        montes, nascetur ridiculus mus. Cras quis cursus enim, nec tempor urna. Fusce semper dictum eros nec porta. Proin
+        eu mauris viverra, venenatis dolor eget, tincidunt ante. Donec aliquam nibh nec orci interdum pellentesque. Integer
+        nec laoreet lacus. Etiam a sagittis nibh. Morbi eu ligula ullamcorper sapien convallis auctor sagittis eget tellus.
+        Pellentesque nec aliquam orci, a mattis leo. Curabitur lobortis sapien sodales mauris scelerisque, a imperdiet orci
+        laoreet. Aliquam erat volutpat.
+        Aliquam eu dictum eros, at auctor elit. Aenean lacinia et ante sed dapibus. Curabitur cursus magna sit amet luctus
+        faucibus. Nunc sed magna nec ipsum lobortis aliquam. Aenean id est dui. Nullam nec aliquet turpis. Vestibulum nec
+        lorem magna. Fusce eu fermentum dolor. Cras at lobortis mauris. Orci varius natoque penatibus et magnis dis parturient
+        montes, nascetur ridiculus mus. Cras quis cursus enim, nec tempor urna. Fusce semper dictum eros nec porta. Proin
+        eu mauris viverra, venenatis dolor eget, tincidunt ante. Donec aliquam nibh nec orci interdum pellentesque. Integer
+        nec laoreet lacus. Etiam a sagittis nibh. Morbi eu ligula ullamcorper sapien convallis auctor sagittis eget tellus.
+        Pellentesque nec aliquam orci, a mattis leo. Curabitur lobortis sapien sodales mauris scelerisque, a imperdiet orci
+        laoreet. Aliquam erat volutpat.
+        Aliquam eu dictum eros, at auctor elit. Aenean lacinia et ante sed dapibus. Curabitur cursus magna sit amet luctus
+        faucibus. Nunc sed magna nec ipsum lobortis aliquam. Aenean id est dui. Nullam nec aliquet turpis. Vestibulum nec
+        lorem magna. Fusce eu fermentum dolor. Cras at lobortis mauris. Orci varius natoque penatibus et magnis dis parturient
+        montes, nascetur ridiculus mus. Cras quis cursus enim, nec tempor urna. Fusce semper dictum eros nec porta. Proin
+        eu mauris viverra, venenatis dolor eget, tincidunt ante. Donec aliquam nibh nec orci interdum pellentesque. Integer
+        nec laoreet lacus. Etiam a sagittis nibh. Morbi eu ligula ullamcorper sapien convallis auctor sagittis eget tellus.
+        Pellentesque nec aliquam orci, a mattis leo. Curabitur lobortis sapien sodales mauris scelerisque, a imperdiet orci
+        laoreet. Aliquam erat volutpat.
+
+    </p>
+
+    <h2>Positionnement Fixe (fixed)</h2>
+    <p>
+        <img src="images/beach.jpg" title="La plage" class="monImageFixed" /> Cadre Vert : avec position=fixed, l’élément concerné ne bougera pas lors du défilement de la page.Il se place au dessus des autres éléments.
+    </p>
+
+    <h2>Positionnement Absolu (absolute)</h2>
+    <p>
+        <img src="images/beach.jpg" title="La plage" class="monImageAbsolute" /> Cadre Rouge : avec position=absolute, l'élément se pose à une position prédeterminée sur la page. Il accompagne le défilement de la page. Il se place au dessus des autres éléments
+    </p>
+
+    <h1>CSS3</h1>
+    <h2>Les Tableaux</h2>
+    <p>Un exemple de tableau mis en page avec CSS3</p>
+    <table id="mytable">
+        <!--Les Titres de colonnes du Tableau -->
+        <tr>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Commentaire</th> 
+        <!--Les Lignes de colonnes -->
+        <tr>
+            <td>Jean</td>
+            <td>Valjean</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nullam non massa viverra, semper neque id, convallis neque.
+               </td>
+        </tr>
+        <tr>
+            <td>Robert</td>
+            <td>Dupond</td>
+            <td> Fusce semper dictum eros nec porta. Proin
+                    eu mauris viverra, venenatis dolor eget, tincidunt ante.</td>
+        </tr>
+        <tr>
+                <td>Robert</td>
+                <td>Dupond</td>
+                <td> Fusce semper dictum eros nec porta. Proin
+                        eu mauris viverra, venenatis dolor eget, tincidunt ante.</td>
+        </tr>
+        <tr>
+                <td>Robert</td>
+                <td>Dupond</td>
+                <td> Fusce semper dictum eros nec porta. Proin
+                        eu mauris viverra, venenatis dolor eget, tincidunt ante.</td>
+        </tr>
+    </table>
+
+
+   
+    <h2>column-count</h2>
+    Permet de répartir un texte sur un nombre choisi de colonnes. N'existe qu'à partir de CSS3
+    <p class="mynewspapercss3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non massa viverra, semper neque id, convallis neque.
+        Aliquam eu dictum eros, at auctor elit. Aenean lacinia et ante sed dapibus. Curabitur cursus magna sit amet luctus
+        faucibus. Nunc sed magna nec ipsum lobortis aliquam. Aenean id est dui. Nullam nec aliquet turpis. Vestibulum nec
+        lorem magna. Fusce eu fermentum dolor. Cras at lobortis mauris. Orci varius natoque penatibus et magnis dis parturient
+        montes, nascetur ridiculus mus. Cras quis cursus enim, nec tempor urna. Fusce semper dictum eros nec porta. Proin
+        eu mauris viverra, venenatis dolor eget, tincidunt ante. Donec aliquam nibh nec orci interdum pellentesque. Integer
+        nec laoreet lacus. Etiam a sagittis nibh. Morbi eu ligula ullamcorper sapien convallis auctor sagittis eget tellus.
+        Pellentesque nec aliquam orci, a mattis leo. Curabitur lobortis sapien sodales mauris scelerisque, a imperdiet orci
+        laoreet. Aliquam erat volutpat.
+        
+    </p>
+
+    
+
+</body>
+
+</html>
